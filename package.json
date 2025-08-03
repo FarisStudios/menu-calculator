@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
