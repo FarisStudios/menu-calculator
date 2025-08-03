@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.loading {
+    font-style: italic;
+    color: #666;
+    margin-top: 20px;
+}
+
+#error-message {
+    font-weight: bold;
+    color: crimson;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.scrollable-list {
+    width: 100%;
+    max-height: 50vh;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #f9f9f9;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.item-price {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+.amount-counter {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.counter-button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    padding: 8px 12px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s;
+}
+
+.counter-button.decrement {
+    color: red;
+}
+
+.counter-button.increment {
+    color: green;
+}
+
+.counter-button:hover {
+    background-color: #eee;
+}
+
+.counter-value {
+    padding: 0 15px;
+    font-size: 1.1em;
+    min-width: 30px;
+    text-align: center;
+}
+
+.sum-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
